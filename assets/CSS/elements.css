@@ -1,26 +1,58 @@
+section {
+  width: 700px;
 
-
-section{
-    width: 700px;
-    
-        display: flex; /* or inline-flex */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #mySvg {
-width: 100px;
-height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
+.pop {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+#hoverBox {
+  text-align: center;
+}
+#hoverBox {
+  background-color: black;
+  color: white;
 
-
-.pop{
-    transform-box: fill-box;
-    transform-origin: center; 
-
+  transition: background-color 2s, width 3s, border-radius 3s ease-in-out;
+}
+#hoverBox:hover {
+  background-color: red;
+  width: 600px;
+  border-radius: 30px;
+}
+.fadeInBox {
+  animation: fadeIn 5s ease;
+  animation-fill-mode: forwards;
+}
+#boxIn {
+  text-align: center;
+  animation: slideIn 3s ease;
+  animation-iteration-count: 2;
 }
 
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    margin-right: 100%;
+  }
+  to {
+    margin-right: 0%;
+  }
+}
