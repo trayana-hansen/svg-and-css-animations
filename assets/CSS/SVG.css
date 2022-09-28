@@ -1,17 +1,29 @@
 
-.wings{
 
-     transform-box: fill-box;
-     transform-origin: center; 
-       animation:spin 1s linear infinite;
-  }
-   
-  @keyframes spin { 
-      100% { 
-          -webkit-transform: rotate(360deg); 
-          transform:rotate(360deg); 
-      } 
+  #bigMill{
+
+    transform-box: fill-box;
+    transform-origin: center;
+      animation:spin 5s linear infinite;
+ }
+ #smallmillOne{
+
+  transform-box: fill-box;
+  transform-origin: center;
+    animation:spin 3s linear infinite;
+}
+#smallmillTwo{
+
+  transform-box: fill-box;
+  transform-origin: center;
+    animation:spin 1s linear infinite;
+}
+
+  @keyframes spin {
+      100% {
+          -webkit-transform: rotate(360deg);
+          transform:rotate(360deg);
+      }
     }
 
-    
-    
+
